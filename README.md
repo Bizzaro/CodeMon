@@ -6,12 +6,12 @@ I've written an extremely simple/clean/portable/short implementation to do the s
 # Usage
 You can customize the command to be whatever you want through run-time arguments.  
 
-`./watch.sh <file to watch> <command to run when changed>`
-Ex. 
-`./watch.sh HelloWorld.java ./run.sh`
+`./watch.sh <file to watch> <command to run when changed>`  
+Ex.  
+`./watch.sh HelloWorld.java ./run.sh`  
 
-A good tool to use in combination with this would be to use GNU make and a Makefile to automate clean, builds, deploys, whatever. 
-`./watch.sh HelloWorld.java make`
+A good tool to use in combination with this would be to use GNU make and a Makefile to automate clean, builds, deploys, whatever.  
+`./watch.sh HelloWorld.java make`  
 
 # Compatibility
 Only works with UNIX - like systems.
