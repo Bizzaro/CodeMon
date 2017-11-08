@@ -8,6 +8,7 @@
 
 #run stat on the file specified to watch
 ori=`stat -f %z $1`
+#ori=`md5 $1`
 echo "Welcome to CodeMon! Watching $1 now..."
 #start command
 $2 &
@@ -19,6 +20,7 @@ while true; do
     #use trap to catch CTRL-C (SIGINT)
     trap "pkill -TERM -P $pid; exit" INT
     #run the stat command on the file again
+    #now=`md5 $1`
     now=`stat -f %z $1`
     #get the current date and time
     date=`date`
